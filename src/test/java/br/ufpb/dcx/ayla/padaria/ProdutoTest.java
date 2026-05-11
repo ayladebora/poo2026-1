@@ -27,7 +27,10 @@ public class ProdutoTest {
         Produto p1 = new Produto();
         Produto p2 = new Produto("123", "sonho", true);
         assertFalse(p1.equals(p2));
-
+        assertTrue(p1.equals(p1));
+        assertTrue(p2.equals(p2));
+        Produto p3 = new Produto("123", "pão doce amarelo", true);
+        assertTrue(p2.equals(p3));
     }
 
 }
