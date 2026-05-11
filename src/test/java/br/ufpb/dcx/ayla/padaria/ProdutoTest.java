@@ -2,8 +2,7 @@ package br.ufpb.dcx.ayla.padaria;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class ProdutoTest {
@@ -25,6 +24,9 @@ public class ProdutoTest {
 
     @Test
     public void testaEquals(){
+        Produto p1 = new Produto();
+        Produto p2 = new Produto("123", "sonho", true);
+        assertFalse(p1.equals(p2));
 
     }
 
