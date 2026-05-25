@@ -1,5 +1,6 @@
 package br.ufpb.dcx.ayla.padaria;
 
+import java.io.IOException;
 import java.util.Collection;
 import java.util.LinkedList;
 
@@ -33,6 +34,16 @@ public class SistemaPadariaDeAyla implements SistemaPadaria{
     }
     public Collection<Produto> obterTodosOsProdutos(){
         return this.produtos;
+    }
+
+    @Override
+    public void salvarDados() throws IOException {
+        //TODO
+    }
+
+    @Override
+    public void recuperarDados() throws IOException {
+        //TODO
     }
 
 

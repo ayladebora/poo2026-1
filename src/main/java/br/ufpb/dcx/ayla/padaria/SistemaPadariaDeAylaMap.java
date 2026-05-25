@@ -1,5 +1,6 @@
 package br.ufpb.dcx.ayla.padaria;
 
+import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -31,6 +32,16 @@ public class SistemaPadariaDeAylaMap implements  SistemaPadaria {
     public Collection<Produto> obterTodosOsProdutos(){
         return null;
         //TODO
+    }
+
+    @Override
+    public void salvarDados() throws IOException {
+        //TODO
+    }
+
+    @Override
+    public void recuperarDados() throws IOException {
+//TODO
     }
 
 
